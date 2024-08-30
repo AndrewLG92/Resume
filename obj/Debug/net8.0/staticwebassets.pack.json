@@ -245,6 +245,22 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "C:\\Users\\joker\\Desktop\\Projects\\Resume.Web\\Resume\\wwwroot\\sass\\StyleSheet.css",
+      "PackagePath": "staticwebassets\\sass\\StyleSheet.css"
+    },
+    {
+      "Id": "C:\\Users\\joker\\Desktop\\Projects\\Resume.Web\\Resume\\wwwroot\\sass\\StyleSheet.scss",
+      "PackagePath": "staticwebassets\\sass\\StyleSheet.scss"
+    },
+    {
+      "Id": "C:\\Users\\joker\\Desktop\\Projects\\Resume.Web\\Resume\\wwwroot\\sass\\utilities\\_variables.css",
+      "PackagePath": "staticwebassets\\sass\\utilities\\_variables.css"
+    },
+    {
+      "Id": "C:\\Users\\joker\\Desktop\\Projects\\Resume.Web\\Resume\\wwwroot\\sass\\utilities\\_variables.scss",
+      "PackagePath": "staticwebassets\\sass\\utilities\\_variables.scss"
+    },
+    {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Resume.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
