@@ -2,35 +2,40 @@
 
 body {
 
+    .container-fluid {
+        width: fit-content;
+    }
+
     header {
         background-color: #FFF;
         margin: 0 auto;
         border-bottom-right-radius: 80px 80px;
         border-bottom-left-radius: 80px 80px;
 
-        @media #{$small-mobile}{
+
+        @media #{$small-mobile} {
             border-top-right-radius: 80px 80px;
             border-bottom-left-radius: 0;
             width: 25% !important;
             height: 10%;
             position: absolute;
-
         }
 
         i {
             display: none;
 
             @media #{$small-mobile} {
-                display: block;
+                display: flex;
                 font-size: 4em;
-                margin: 0 auto;
+                /* margin: 0 auto; */
+                /* justify-content: center; */
+                position: absolute;
+                top: .4rem;
             }
         }
 
         .navbar {
-            padding: 1em;
-
-
+            padding: 1em 1.5em 1em 1.5em;
 
             .navbar-nav {
                 flex-direction: row !important;

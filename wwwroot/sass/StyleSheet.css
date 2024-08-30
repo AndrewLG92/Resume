@@ -1,4 +1,7 @@
 ﻿/* breakpoints */
+body .container-fluid {
+  width: fit-content;
+}
 body header {
   background-color: #FFF;
   margin: 0 auto;
@@ -19,13 +22,16 @@ body header i {
 }
 @media screen and (max-width: 480px) {
   body header i {
-    display: block;
+    display: flex;
     font-size: 4em;
-    margin: 0 auto;
+    /* margin: 0 auto; */
+    /* justify-content: center; */
+    position: absolute;
+    top: 0.4rem;
   }
 }
 body header .navbar {
-  padding: 1em;
+  padding: 1em 1.5em 1em 1.5em;
 }
 body header .navbar .navbar-nav {
   flex-direction: row !important;
