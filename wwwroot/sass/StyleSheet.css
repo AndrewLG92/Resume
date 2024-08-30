@@ -1,0 +1,48 @@
+﻿/* breakpoints */
+body header {
+  background-color: #FFF;
+  margin: 0 auto;
+  border-bottom-right-radius: 80px 80px;
+  border-bottom-left-radius: 80px 80px;
+}
+@media screen and (max-width: 480px) {
+  body header {
+    border-top-right-radius: 80px 80px;
+    border-bottom-left-radius: 0;
+    width: 25% !important;
+    height: 10%;
+    position: absolute;
+  }
+}
+body header i {
+  display: none;
+}
+@media screen and (max-width: 480px) {
+  body header i {
+    display: block;
+    font-size: 4em;
+    margin: 0 auto;
+  }
+}
+body header .navbar {
+  padding: 1em;
+}
+body header .navbar .navbar-nav {
+  flex-direction: row !important;
+}
+body header .navbar .navbar-nav .nav-item {
+  width: fit-content;
+}
+body header .navbar .navbar-nav .nav-item .nav-link {
+  color: black !important;
+  text-shadow: 4px 4px 4px #9fa3a5, 0px 0px 25px rgba(159, 163, 165, 0.9294117647), 0px 0px 25px #9fa3a5;
+}
+body header .navbar .navbar-nav .nav-item .nav-link a {
+  width: fit-content;
+}
+body header .navbar .navbar-nav .nav-item .nav-link a h4 {
+  font-weight: normal !important;
+}
+body header .navbar .row {
+  flex-wrap: nowrap;
+}

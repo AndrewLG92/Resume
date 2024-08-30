@@ -134,3 +134,4 @@ C:\Users\joker\Desktop\Projects\Resume.Web\Resume\obj\Debug\net8.0\refint\Resume
 C:\Users\joker\Desktop\Projects\Resume.Web\Resume\obj\Debug\net8.0\Resume.pdb
 C:\Users\joker\Desktop\Projects\Resume.Web\Resume\obj\Debug\net8.0\Resume.genruntimeconfig.cache
 C:\Users\joker\Desktop\Projects\Resume.Web\Resume\obj\Debug\net8.0\ref\Resume.dll
+C:\Users\joker\Desktop\Projects\Resume.Web\Resume\obj\Debug\net8.0\Resume.sourcelink.json

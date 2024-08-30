@@ -1,0 +1,16 @@
+﻿[
+  {
+    "outputFile": "wwwroot/sass/StyleSheet.css",
+    "inputFile": "wwwroot/sass/StyleSheet.scss",
+    "minify": {
+      "enabled": false
+    }
+  },
+  {
+    "outputFile": "wwwroot/sass/utilities/_variables.css",
+    "inputFile": "wwwroot/sass/utilities/_variables.scss",
+    "minify": {
+      "enabled": false
+    }
+  }
+]
