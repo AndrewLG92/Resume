@@ -9,3 +9,5 @@ obj/Debug/net8.0/Resume.sourcelink.json
 obj/Debug/net8.0/Resume.csproj.FileListAbsolute.txt
 obj/Debug/net8.0/Resume.AssemblyInfoInputs.cache
 obj/Debug/net8.0/staticwebassets.pack.json
+obj/
+bin/
