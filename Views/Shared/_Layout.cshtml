@@ -11,37 +11,38 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
-    <header class="container-fluid shadow-lg">
+    <header class="container-fluid shadow-lg d-flex justify-content-center">
         <i class="bi bi-layers-fill"></i>
-        <nav class="navbar justify-content-center">
-            <div class="d-flex flex-row">
-                <ul class="navbar-nav row gap-5">
-                    <li class="nav-item col">
-                        <a class="nav-link" asp-action="Index" asp-action="Index">
-                            <h4>Home</h4>
-                        </a>
-                    </li>
-                    <li class="nav-item col">
-                        <a href="#" class="nav-link">
-                            <h4>Resume</h4>
-                        </a>
-                    </li>
-                    <li class="nav-item col">
-                        <a href="#" class="nav-link">
-                            <h4>Projects</h4>
-                        </a>
-                    </li>
-                    <li class="nav-item col">
-                        <a href="#" class="nav-link">
-                            <h4>About Me</h4>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+        <nav class="navbar row w-50">
+            
+            <ul class="navbar-nav gap-5">
+                <li class="nav-item col">
+                    <a class="nav-link" asp-action="Index" asp-action="Index">
+                        <h4>Portfolio</h4>
+                    </a>
+                </li>
+                <li class="nav-item col-8">
+                    <a href="#" class="nav-link">
+                        <h4>About Me</h4>
+                    </a>
+                </li>
+                <li class="nav-item col-9">
+                    <a href="#" class="nav-link">
+                        <h4>Resume</h4>
+                    </a>
+                </li>
+                <li class="nav-item col-10">
+                    <a href="#" class="nav-link">
+                        <h4>Projects</h4>
+                    </a>
+                </li>
+                    
+            </ul>
+            
             
         </nav>
     </header>
-    <div class="container">
+    <div class="container-fluid">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>

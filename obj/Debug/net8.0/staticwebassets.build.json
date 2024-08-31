@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "u7DbNydK0QB76MSTRnRXwnkW0UY94zVpXLhv9CRXZn8=",
+  "Hash": "5K9JJneLSQGxRCETCf2kGCrbcDQpXZ86qWX2Th/9f4U=",
   "Source": "Resume",
   "BasePath": "_content/Resume",
   "Mode": "Default",
@@ -91,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\joker\\Desktop\\Projects\\Resume.Web\\Resume\\wwwroot\\images\\Simple_Environment.jpeg",
+      "SourceId": "Resume",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\joker\\Desktop\\Projects\\Resume.Web\\Resume\\wwwroot\\",
+      "BasePath": "_content/Resume",
+      "RelativePath": "images/Simple_Environment.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Simple_Environment.jpeg"
     },
     {
       "Identity": "C:\\Users\\joker\\Desktop\\Projects\\Resume.Web\\Resume\\wwwroot\\js\\site.js",

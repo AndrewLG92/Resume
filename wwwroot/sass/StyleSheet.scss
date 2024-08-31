@@ -2,36 +2,12 @@
 
 body {
 
-    .container-fluid {
-        width: fit-content;
-    }
-
     header {
-        background-color: #FFF;
+        background-color: black;
         margin: 0 auto;
-        border-bottom-right-radius: 80px 80px;
-        border-bottom-left-radius: 80px 80px;
-
-
-        @media #{$small-mobile} {
-            border-top-right-radius: 80px 80px;
-            border-bottom-left-radius: 0;
-            width: 25% !important;
-            height: 10%;
-            position: absolute;
-        }
 
         i {
             display: none;
-
-            @media #{$small-mobile} {
-                display: flex;
-                font-size: 4em;
-                /* margin: 0 auto; */
-                /* justify-content: center; */
-                position: absolute;
-                top: .4rem;
-            }
         }
 
         .navbar {
@@ -45,8 +21,8 @@ body {
                     width: fit-content;
 
                     .nav-link {
-                        color: black !important;
-                        text-shadow: 4px 4px 4px #9fa3a5, 0px 0px 25px #9fa3a5ed, 0px 0px 25px #9fa3a5;
+                        color: #FFF !important;
+                        text-shadow: 4px 4px 4px #717171, 0px 0px 25px #717171, 0px 0px 25px #717171;
 
                         a {
                             width: fit-content;
@@ -61,6 +37,38 @@ body {
 
             .row {
                 flex-wrap: nowrap;
+            }
+        }
+    }
+
+
+    main {
+        .top {
+            .item-1 {
+                .card-text {
+                    font-size: 30px;
+                }
+            }
+
+            .item-2 {
+                .card {
+                    border-radius: 50em;
+                    width: 600px;
+                    height: 600px;
+                    display: flex;
+                    align-items: center;
+                    box-shadow: 0em -.5rem 3rem rgba(0, 0, 0, 1);
+                    background: #adb5bdad;
+
+                    img {
+                        border-radius: 66em;
+                        width: 550px;
+                        height: 550px;
+                        object-fit: cover;
+                        position: absolute;
+                        top: 1.5em;
+                    }
+                }
             }
         }
     }

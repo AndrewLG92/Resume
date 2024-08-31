@@ -1,34 +1,10 @@
 ﻿/* breakpoints */
-body .container-fluid {
-  width: fit-content;
-}
 body header {
-  background-color: #FFF;
+  background-color: black;
   margin: 0 auto;
-  border-bottom-right-radius: 80px 80px;
-  border-bottom-left-radius: 80px 80px;
-}
-@media screen and (max-width: 480px) {
-  body header {
-    border-top-right-radius: 80px 80px;
-    border-bottom-left-radius: 0;
-    width: 25% !important;
-    height: 10%;
-    position: absolute;
-  }
 }
 body header i {
   display: none;
-}
-@media screen and (max-width: 480px) {
-  body header i {
-    display: flex;
-    font-size: 4em;
-    /* margin: 0 auto; */
-    /* justify-content: center; */
-    position: absolute;
-    top: 0.4rem;
-  }
 }
 body header .navbar {
   padding: 1em 1.5em 1em 1.5em;
@@ -40,8 +16,8 @@ body header .navbar .navbar-nav .nav-item {
   width: fit-content;
 }
 body header .navbar .navbar-nav .nav-item .nav-link {
-  color: black !important;
-  text-shadow: 4px 4px 4px #9fa3a5, 0px 0px 25px rgba(159, 163, 165, 0.9294117647), 0px 0px 25px #9fa3a5;
+  color: #FFF !important;
+  text-shadow: 4px 4px 4px #717171, 0px 0px 25px #717171, 0px 0px 25px #717171;
 }
 body header .navbar .navbar-nav .nav-item .nav-link a {
   width: fit-content;
@@ -51,4 +27,24 @@ body header .navbar .navbar-nav .nav-item .nav-link a h4 {
 }
 body header .navbar .row {
   flex-wrap: nowrap;
+}
+body main .top .item-1 .card-text {
+  font-size: 30px;
+}
+body main .top .item-2 .card {
+  border-radius: 50em;
+  width: 600px;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0em -0.5rem 3rem rgb(0, 0, 0);
+  background: rgba(173, 181, 189, 0.6784313725);
+}
+body main .top .item-2 .card img {
+  border-radius: 66em;
+  width: 550px;
+  height: 550px;
+  object-fit: cover;
+  position: absolute;
+  top: 1.5em;
 }

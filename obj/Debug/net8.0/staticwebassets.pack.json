@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\joker\\Desktop\\Projects\\Resume.Web\\Resume\\wwwroot\\images\\Simple_Environment.jpeg",
+      "PackagePath": "staticwebassets\\images\\Simple_Environment.jpeg"
+    },
+    {
       "Id": "C:\\Users\\joker\\Desktop\\Projects\\Resume.Web\\Resume\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
