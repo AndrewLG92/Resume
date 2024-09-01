@@ -28,8 +28,17 @@ body header .navbar .navbar-nav .nav-item .nav-link a h4 {
 body header .navbar .row {
   flex-wrap: nowrap;
 }
-body main .top .item-1 .card-text {
-  font-size: 30px;
+body main .top .item-1 .card {
+  box-shadow: 0em 0.5rem 3rem rgb(0, 0, 0);
+  transition-property: opacity, transform;
+  transition-duration: 2s;
+  transition-timing-function: ease-in-out;
+}
+@starting-style {
+  body main .top .item-1 .card {
+    opacity: 0;
+    transform: translate(-30rem);
+  }
 }
 body main .top .item-2 .card {
   border-radius: 50em;
@@ -39,6 +48,9 @@ body main .top .item-2 .card {
   align-items: center;
   box-shadow: 0em -0.5rem 3rem rgb(0, 0, 0);
   background: rgba(173, 181, 189, 0.6784313725);
+  position: relative;
+  left: 17em;
+  top: 5em;
 }
 body main .top .item-2 .card img {
   border-radius: 66em;

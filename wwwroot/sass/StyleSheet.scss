@@ -45,12 +45,20 @@ body {
     main {
         .top {
             .item-1 {
-                .card-text {
-                    font-size: 30px;
+                .card {
+                    box-shadow: 0em .5rem 3rem rgba(0, 0, 0, 1);
+                    transition-property: opacity, transform;
+                    transition-duration: 2s;
+                    transition-timing-function: ease-in-out;
+                    @starting-style {
+                        opacity: 0;
+                        transform: translate(-30rem);
+                    }
                 }
             }
 
             .item-2 {
+
                 .card {
                     border-radius: 50em;
                     width: 600px;
@@ -59,6 +67,9 @@ body {
                     align-items: center;
                     box-shadow: 0em -.5rem 3rem rgba(0, 0, 0, 1);
                     background: #adb5bdad;
+                    position: relative;
+                    left: 17em;
+                    top: 5em;
 
                     img {
                         border-radius: 66em;
