@@ -43,17 +43,36 @@ body {
 
 
     main {
+
+        .header {
+            h1 {
+                font-size: 5.5rem;
+                text-size-adjust: auto;
+            }
+        }
+
+
         .top {
             .item-1 {
                 .card {
+                    width: fit-content;
+                    height: max-content;
                     box-shadow: 0em .5rem 3rem rgba(0, 0, 0, 1);
                     transition-property: opacity, transform;
                     transition-duration: 2s;
                     transition-timing-function: ease-in-out;
 
+
                     @starting-style {
                         opacity: 0;
                         transform: translate(-30rem);
+                    }
+
+                    .card-body {
+
+                        p {
+                            font-size: 32px;
+                        }
                     }
                 }
             }
@@ -68,6 +87,14 @@ body {
                     align-items: center;
                     box-shadow: 0em -0.5rem 3rem rgb(0, 0, 0);
                     background: rgba(173, 181, 189, 0.6784313725);
+                    transition-property: opacity, transform;
+                    transition-duration: 2s;
+                    transition-timing-function: ease-in-out;
+
+                    @starting-style {
+                        opacity: 0;
+                        transform: translate(30rem);
+                    }
 
 
                     img {
