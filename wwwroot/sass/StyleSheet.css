@@ -28,9 +28,80 @@ body header .navbar .navbar-nav .nav-item .nav-link a h4 {
 body header .navbar .row {
   flex-wrap: nowrap;
 }
-body main .header h1 {
+body main .header {
+  color: #FFF;
+  text-shadow: 0px 6px 3px #2f0ca7, 12px 0px 18px #2f0ca7, 0px 0px 6px #2f0ca7;
+}
+body main .header div {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
   font-size: 5.5rem;
-  text-size-adjust: auto;
+}
+body main .header .first:first-of-type {
+  animation: showup 10s forwards;
+}
+body main .header .second:last-of-type {
+  width: 0px;
+  animation: reveal 10s forwards;
+}
+body main .header .second:last-of-type span {
+  margin-left: -355px;
+  animation: slidein 10s forwards;
+  display: flex;
+}
+@keyframes showup {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slidein {
+  0% {
+    margin-left: -800px;
+  }
+  20% {
+    margin-left: -800px;
+  }
+  35% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: 0px;
+    width: fit-content;
+  }
+}
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    width: 0px;
+  }
+  20% {
+    opacity: 1;
+    width: 0px;
+  }
+  30% {
+    width: 19em;
+  }
+  80% {
+    opacity: 1;
+    width: 20em;
+  }
+  100% {
+    opacity: 1;
+    width: 16em;
+  }
+}
+body main .top .item-1 {
+  align-items: center;
 }
 body main .top .item-1 .card {
   width: fit-content;
@@ -56,7 +127,7 @@ body main .top .item-2 .card {
   display: flex;
   align-items: center;
   box-shadow: 0em -0.5rem 3rem rgb(0, 0, 0);
-  background: rgba(173, 181, 189, 0.6784313725);
+  background: linear-gradient(40deg, #8977bd, #2f0ca7);
   transition-property: opacity, transform;
   transition-duration: 2s;
   transition-timing-function: ease-in-out;
