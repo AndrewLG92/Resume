@@ -31,24 +31,24 @@ body header .navbar .row {
 body main .header {
   color: #FFF;
   text-shadow: 9px 15px 4px #2f0ca7, 4px 17px 10px #2f0ca7, 0px -7px 14px #2f0ca7;
+  column-gap: normal;
 }
-body main .header div {
-  display: inline-block;
+body main .header .first {
+  display: inline-flex;
   overflow: hidden;
   white-space: nowrap;
   font-size: 5.5rem;
 }
-body main .header .first:first-of-type {
+body main .header .first.after {
   animation: showup 10s forwards;
 }
-body main .header .second:last-of-type {
+body main .header .second {
+  margin-left: 1.67rem;
   width: 0px;
   animation: reveal 10s forwards;
 }
-body main .header .second:last-of-type span {
-  margin-left: -355px;
+body main .header .second.after {
   animation: slidein 10s forwards;
-  display: flex;
 }
 @keyframes showup {
   0% {
@@ -139,4 +139,60 @@ body main .top .item-2 img {
 }
 body main .top .item-2 .image {
   filter: drop-shadow(0 0 1.1rem #FFF);
+}
+body main .top .arrow-ctrl {
+  position: fixed;
+  top: 70em;
+  left: 33.3em;
+}
+body main .top .arrow-ctrl .arrow-design {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  justify-content: center;
+}
+body main .top .arrow-ctrl .arrow-design .arrow {
+  opacity: 0;
+  position: absolute;
+  left: 75%;
+  top: 70%;
+  transform-origin: 50% 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+body main .top .arrow-ctrl .arrow-design .arrow-first {
+  animation: arrow-movement 2s ease-in-out infinite;
+}
+body main .top .arrow-ctrl .arrow-design .arrow-second {
+  animation: arrow-movement 2s 1s ease-in-out infinite;
+}
+body main .top .arrow-ctrl .arrow-design .arrow:before,
+body main .top .arrow-ctrl .arrow-design .arrow:after {
+  background: #fff;
+  content: "";
+  display: block;
+  height: 3px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+}
+body main .top .arrow-ctrl .arrow-design .arrow:before {
+  transform: rotate(45deg) translateX(-20%);
+  transform-origin: top left;
+}
+body main .top .arrow-ctrl .arrow-design .arrow:after {
+  transform: rotate(-45deg) translateX(20%);
+  transform-origin: top right;
+}
+@keyframes arrow-movement {
+  0% {
+    opacity: 0;
+    top: 45%;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }

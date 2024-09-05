@@ -47,30 +47,29 @@ body {
         .header {
             color: #FFF;
             text-shadow: 9px 15px 4px #2f0ca7, 4px 17px 10px #2f0ca7, 0px -7px 14px #2f0ca7;
+            column-gap: normal;
 
-
-            div {
-                display: inline-block;
+            .first {
+                display: inline-flex;
                 overflow: hidden;
                 white-space: nowrap;
                 font-size: 5.5rem;
-                //text-size-adjust: auto;
+
+                &.after {
+                    animation: showup 10s forwards;
+                }
             }
 
-            .first:first-of-type {
-                animation: showup 10s forwards;
-            }
-
-            .second:last-of-type {
+            .second {
+                margin-left: 1.67rem;
                 width: 0px;
                 animation: reveal 10s forwards;
+
+                &.after {
+                    animation: slidein 10s forwards;
+                }
             }
 
-            .second:last-of-type span {
-                margin-left: -355px;
-                animation: slidein 10s forwards;
-                display: flex;
-            }
 
             @keyframes showup {
                 0% {
@@ -186,6 +185,73 @@ body {
 
                 .image {
                     filter: drop-shadow(0 0 1.1rem #FFF);
+                }
+            }
+
+            .arrow-ctrl {
+                position: fixed;
+                top: 70em;
+                left: 33.3em;
+
+                .arrow-design {
+                    width: 70px;
+                    height: 70px;
+                    position: absolute;
+                    justify-content: center;
+
+                    .arrow {
+                        opacity: 0;
+                        position: absolute;
+                        left: 75%;
+                        top: 70%;
+                        transform-origin: 50% 50%;
+                        transform: translate3d(-50%, -50%, 0);
+                    }
+
+                    .arrow-first {
+                        animation: arrow-movement $ani-speed ease-in-out infinite;
+                    }
+
+                    .arrow-second {
+                        animation: arrow-movement $ani-speed $ani-delay ease-in-out infinite;
+                    }
+
+                    .arrow:before,
+                    .arrow:after {
+                        background: #fff;
+                        content: '';
+                        display: block;
+                        height: 3px;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 30px;
+                    }
+
+                    .arrow:before {
+                        transform: rotate(45deg) translateX(-20%);
+                        transform-origin: top left;
+                    }
+
+                    .arrow:after {
+                        transform: rotate(-45deg) translateX(20%);
+                        transform-origin: top right;
+                    }
+                    // Animation
+                    @keyframes arrow-movement {
+                        0% {
+                            opacity: 0;
+                            top: 45%;
+                        }
+
+                        70% {
+                            opacity: 1;
+                        }
+
+                        100% {
+                            opacity: 0;
+                        }
+                    }
                 }
             }
         }
