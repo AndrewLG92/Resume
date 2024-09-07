@@ -47,21 +47,20 @@ body {
         .header {
             color: #FFF;
             text-shadow: 9px 15px 4px #2f0ca7, 4px 17px 10px #2f0ca7, 0px -7px 14px #2f0ca7;
-            column-gap: normal;
+            
 
             .first {
                 display: inline-flex;
                 overflow: hidden;
                 white-space: nowrap;
                 font-size: 5.5rem;
-
                 &.after {
                     animation: showup 10s forwards;
                 }
             }
 
             .second {
-                margin-left: 1.67rem;
+                
                 width: 0px;
                 animation: reveal 10s forwards;
 
@@ -91,41 +90,36 @@ body {
 
             @keyframes slidein {
                 0% {
-                    margin-left: -800px;
+                    margin-left: 0px;
                 }
 
                 20% {
-                    margin-left: -800px;
+                    margin-left: 0px;
                 }
 
-                35% {
+                80% {
                     margin-left: 0px;
                 }
 
                 100% {
                     margin-left: 0px;
-                    width: fit-content;
                 }
             }
 
             @keyframes reveal {
                 0% {
                     opacity: 0;
-                    width: 0px;
+                    width: -100px;
                 }
 
                 20% {
-                    opacity: 1;
-                    width: 0px;
-                }
-
-                30% {
-                    width: 19em;
+                    opacity: 0;
+                    width: 100px;
                 }
 
                 80% {
                     opacity: 1;
-                    width: 20em;
+                    width: 16em;
                 }
 
                 100% {
