@@ -18,6 +18,12 @@ namespace Resume.Controllers
             return View();
         }
 
+        [Route("/resume")]
+        public IActionResult Resume()
+        {
+            return View("Resume");
+        }
+
         public IActionResult Privacy()
         {
             return View();
