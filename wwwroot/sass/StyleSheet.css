@@ -43,10 +43,10 @@ body main .header .first.after {
 }
 body main .header .second {
   width: 0px;
-  animation: reveal 10s forwards;
+  animation: reveal 7s forwards;
 }
 body main .header .second.after {
-  animation: slidein 10s forwards;
+  animation: slidein 8s forwards;
 }
 @keyframes showup {
   0% {
@@ -189,4 +189,10 @@ body main .top .arrow-ctrl .arrow-design .arrow:after {
   100% {
     opacity: 0;
   }
+}
+body main .bottom .row .card .card-body {
+  padding: 3em;
+}
+body main .bottom .row .card .card-body p {
+  font-size: 32px;
 }

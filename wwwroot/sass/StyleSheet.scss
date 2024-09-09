@@ -62,10 +62,10 @@ body {
             .second {
                 
                 width: 0px;
-                animation: reveal 10s forwards;
+                animation: reveal 7s forwards;
 
                 &.after {
-                    animation: slidein 10s forwards;
+                    animation: slidein 8s forwards;
                 }
             }
 
@@ -252,9 +252,22 @@ body {
         
 
         .bottom {
-           
+           .row {
+               .card{
+                   .card-body{
+                       padding: 3em;
+                       p{
+                           font-size: 32px;
+                       }
+                   }
+               }
+           }
 
             
+        }
+
+        .aboutme {
+
         }
     }
 }

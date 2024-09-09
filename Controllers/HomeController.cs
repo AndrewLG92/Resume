@@ -7,10 +7,12 @@ namespace Resume.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly IWebHostEnvironment _env;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, IWebHostEnvironment env)
         {
             _logger = logger;
+            _env = env;
         }
 
         public IActionResult Index()
@@ -18,10 +20,17 @@ namespace Resume.Controllers
             return View();
         }
 
-        [Route("/resume")]
-        public IActionResult Resume()
+        [Route("/about-me")]
+        public IActionResult AboutMe()
         {
-            return View("Resume");
+            return View("AboutMe");
+        }
+
+        [HttpGet("download")]
+        public IActionResult ResumePdf()
+        {
+            var filepath = Path.Combine(_env.WebRootPath, "pdf", "Luis_A_Garcia_Resume.pdf");
+            return File(System.IO.File.ReadAllBytes(filepath), "application/pdf", System.IO.Path.GetFileName(filepath));
         }
 
         public IActionResult Privacy()
